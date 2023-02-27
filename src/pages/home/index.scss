@@ -1,0 +1,38 @@
+.home-container {
+    margin-top: 15vh;
+
+    .home-text-content {
+        p {
+            margin-bottom: 0;
+            color: #181818;
+        }
+
+        p:nth-child(1) {
+            font-size: calc(1.375rem + 1.625vw) !important;
+        }
+
+        p:nth-child(2) {
+            color: #3707f7;
+            font-size: calc(1.5rem + 1.875vw) !important;
+        }
+
+        p:nth-child(3) {
+            color: #535353;
+            font-size: 1.25rem;
+        }
+    }
+
+    .home-images {
+        #poster-image {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .home-images {
+        #poster-image {
+            margin-top: -6rem;
+        }
+    }
+}
