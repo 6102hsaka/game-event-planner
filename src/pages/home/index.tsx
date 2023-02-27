@@ -1,9 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 import Button from "../../common/button";
 import "./index.scss";
 
 const Home = () => {
+    const navigate = useNavigate();
+
     const navigateToEvents = () => {
-        console.log("navigating");
+        navigate("/events");
     };
 
     return (
