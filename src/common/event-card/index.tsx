@@ -1,15 +1,18 @@
 import { memo, useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
 import { CartContext } from "../../context/CartContext";
 import { EventType } from "../../utils/model";
 import "./index.scss";
 
 const EventCard = ({ id, name, imageUrl }: EventType) => {
+    const navigate = useNavigate();
     const { setEventId } = useContext(CartContext);
 
     const addToCart = () => {
         if (setEventId) {
             setEventId(id);
+            navigate("/checkout");
         }
     };
 

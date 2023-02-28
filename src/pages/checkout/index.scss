@@ -1,0 +1,16 @@
+.checkout-container {
+    .p-calendar {
+        max-width: unset;
+    }
+
+    .p-inputtext {
+        padding: 0.625rem 0.625rem;
+    }
+
+    .p-dropdown,
+    .col-12 > .p-inputtext,
+    .p-calendar > .p-inputtext {
+        width: 16rem;
+        height: 2.75rem;
+    }
+}

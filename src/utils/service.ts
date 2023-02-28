@@ -1,4 +1,4 @@
-import { EventType } from "./model";
+import { EventType, Location } from "./model";
 
 const eventList: EventType[] = [
     {
@@ -23,7 +23,36 @@ const eventList: EventType[] = [
     },
 ];
 
+const locationList: Location[] = [
+    {
+        id: 1,
+        name: "Baghajatin, Kolkata, WB",
+        distance: 10,
+    },
+    {
+        id: 2,
+        name: "Garia, Kolkata, WB",
+        distance: 20,
+    },
+    {
+        id: 3,
+        name: "Sealdah, Kolkata, WB",
+        distance: 15,
+    },
+    {
+        id: 4,
+        name: "Jadavpur, Kolkata, WB",
+        distance: 25,
+    },
+];
+
+const paymentMethodList: string[] = ["UPI", "Cash", "Online", "Cheque"];
+
 export const getAllEvents = () => eventList;
 
 export const getEventById = (eventId: string) =>
     eventList.find(({ id }) => id === eventId);
+
+export const getAllLocation = () => locationList;
+
+export const getAllPaymentMethod = () => paymentMethodList;
